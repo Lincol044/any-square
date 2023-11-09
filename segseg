@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "RU");
+    cout << "[\x1b[33m+\x1b[0m] Программа - Геометричекие фигуры" << endl;
+    cout << "[\x1b[33m1\x1b[0m] Линия" << endl;
+    int choise;
+    cout << "[\x1b[33m+\x1b[0m] Выберите фигуру: ";
+    cin >> choise;
+    system("cls");
+
+
+    if (choise == 1) {
+        cout << "[\x1b[33m+\x1b[0m] Фигура Линия " << endl;
+    }
+
+    cout << "[\x1b[33m1\x1b[0m] Горизинотальная" << endl;
+    cout << "[\x1b[33m2\x1b[0m] Вертикальная" << endl;
+    int choise2;
+    cout << "[\x1b[33m+\x1b[0m] Выберите тип: ";
+    cin >> choise2;
+    system("cls");
+
+    if (choise2 == 1) {
+        int len;
+        cout << "[\x1b[33m+\x1b[0m] Длина линии: ";
+        cin >> len;
+        char tex;
+        cout << "[\x1b[33m+\x1b[0m] Текстура линии: ";
+        cin >> tex;
+        char I;
+        while (I < len) {
+            I = len * tex;
+        }
+        cout << I
+
+    }
+    else if (choise2 == 2) {
+        int len;
+        cout << "[\x1b[33m+\x1b[0m] Длина линии: ";
+        cin >> len;
+        char tex;
+        cout << "[\x1b[33m+\x1b[0m] Текстура линии: ";
+        cin >> tex;
+
+    }
+
+}
